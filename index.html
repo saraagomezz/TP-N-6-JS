@@ -15,128 +15,129 @@
             <h2>Curso: 5°3°</h2>
             <h2>Fecha de entrega: 07/10</h2>
         </div>
-        <ol>
-            <li>Existen diferentes versiones de Java Script <!--consigna 1: ¿Qué versiones de JavaScript hay en el mercado?.
-            -->
-                <ul>
-                    <li>JavaScript 1: Nació con el Natescape 2.0.</li>
-                    <li>JavaScript 1.1: Se diseñó con la llegada de los navegadores 3.0.</li>
-                    <li>JavaScript 1.2: Versión de los navegadres 4.0.</li>
-                    <li>JavaScript 1.3: Versión que implementan los navegadores 5.0. </li>
-                    <li>JavaScript 1.5: Versión actual que implementa Natescape 6.</li>
-                    <li>JScript 5.5: Es la versión de Microsoft.</li>
-                    <li>ECMAScript 5: Versión publicada en 2009 por ECMAScript, funciona en todos los navegadores del mercado.</li>
-                    <li>ECMAScript 6: Lanzada en 2015, es la 6ta versión que contiene muchas novedades. Es compatible con todos los navgadores, excepto Internet Explorer</li>
-                </ul>
+        <div class="respuestas">
+            <ol>
+                <li>Existen diferentes versiones de Java Script <!--consigna 1: ¿Qué versiones de JavaScript hay en el mercado?.
+                -->
+                    <ul>
+                        <li>JavaScript 1: Nació con el Natescape 2.0.</li>
+                        <li>JavaScript 1.1: Se diseñó con la llegada de los navegadores 3.0.</li>
+                        <li>JavaScript 1.2: Versión de los navegadres 4.0.</li>
+                        <li>JavaScript 1.3: Versión que implementan los navegadores 5.0. </li>
+                        <li>JavaScript 1.5: Versión actual que implementa Natescape 6.</li>
+                        <li>JScript 5.5: Es la versión de Microsoft.</li>
+                        <li>ECMAScript 5: Versión publicada en 2009 por ECMAScript, funciona en todos los navegadores del mercado.</li>
+                        <li>ECMAScript 6: Lanzada en 2015, es la 6ta versión que contiene muchas novedades. Es compatible con todos los navgadores, excepto Internet Explorer</li>
+                    </ul>
+                    <br>
+                </li>
+                <li>Cómo se enlaza JavaScript HTML: <!--consigna 2: ¿Cómo se integra JavaScript a HTML?-->
+                    <ul>
+                        <li>Incluir la etiqueta <strong>"script"</strong> dentro de la etiqueta "head"</li>
+                        <li>Incluir la etiqueta <strong>"script"</strong> dentro de la etiqueta "body"</li>
+                        <li>Crear un enlace con el archivo de JavaScript dentro de  la etiqueta "body"</li>
+                    </ul>
+                </li>
                 <br>
-            </li>
-            <li>Cómo se enlaza JavaScript HTML: <!--consigna 2: ¿Cómo se integra JavaScript a HTML?-->
-                <ul>
-                    <li>Incluir la etiqueta <strong>"script"</strong> dentro de la etiqueta "head"</li>
-                    <li>Incluir la etiqueta <strong>"script"</strong> dentro de la etiqueta "body"</li>
-                    <li>Crear un enlace con el archivo de JavaScript dentro de  la etiqueta "body"</li>
-                </ul>
-            </li>
-            <br>
-            <li>Existen 3 maneras de declarar variables: <!--consigna 3:¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?-->
-                <ul>
-                    <li>var: declara una variable iniciandola opcionalmente a un valor. Permite cambiar su valor, es decir sobreescribirla. </li>
-                    <li>let: declara una variable local en un bloque de ámbito. También puede cambiar su valor. </li>
-                    <li>const: declara variables de sólo lectura en un bloque. Su valor no puede ser cambiado mediante la asignación. </li>
-                </ul>
-            
+                <li>Existen 3 maneras de declarar variables: <!--consigna 3:¿Cómo es el manejo de las variables, tipos de datos y expresiones regulares en JS?-->
+                    <ul>
+                        <li>var: declara una variable iniciandola opcionalmente a un valor. Permite cambiar su valor, es decir sobreescribirla. </li>
+                        <li>let: declara una variable local en un bloque de ámbito. También puede cambiar su valor. </li>
+                        <li>const: declara variables de sólo lectura en un bloque. Su valor no puede ser cambiado mediante la asignación. </li>
+                    </ul>
+                
+                    <br>
+                    <p>Se debe tener en cuenta también que cuando se declara una variable fuera de una función se la denomina variable global, ya que estará disponible para cualquier otro código en el documento actual. Sin embargo, cuando la variable es declarada dentro de una función, ésta es denominada variable local, porque está disponible sólo dentro de la función donde fue creada. </p>
+                    <br>
+                    <p>JavaScript tiene los siguientes tipos de datos:</p>
+                    <ul>
+                        <li>string: secuencia de caracteres que representan un valor. </li>
+                        <li>number: valor numérico.</li>
+                        <li>boolean: valores true o false. </li>
+                        <li>null: denota valor nulo. </li>
+                        <li>undefined: valor sin definir. </li>
+                        <li>symbol: tipo de dato, cuyos casos son únicos e inmutables.</li>
+                        <li>object: objeto {} puede contener más variables en su interior.</li>
+                    </ul>
+                
+                    <br>
+                    <p>Expresiones regulares: </p>
+                    <p>Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas. En JavaScript, las expresiones regulares también son objetos. Las expresiones regulares se utilizan con los métodos RegExp test() y exec() y con los métodos de String, match(), replace(), search() y split().</p>
+                </li>
                 <br>
-                <p>Se debe tener en cuenta también que cuando se declara una variable fuera de una función se la denomina variable global, ya que estará disponible para cualquier otro código en el documento actual. Sin embargo, cuando la variable es declarada dentro de una función, ésta es denominada variable local, porque está disponible sólo dentro de la función donde fue creada. </p>
+                <li>Cómo declarar funciones en JavaScript: <!--consigna 4: ¿Cómo son todas las formas de declaración de funciones en JS?.-->
+                    <p>Una definición de función consta de la palabra clave function, seguida de: el nombre de la función, una lista de parámetros de la función, entre paréntesis y separados por comas, las declaraciones de JavaScript que definen la función, encerradas entre corchetes, { /* … */ }.</p>
+                    <p class="ejemplos">function nom_funcion (parametros){
+                        instrucciones; 
+                        }  
+                    </p>
+                    <br>
+                    <p>Las funciones también se pueden crear mediante una expresión de función, esto es una sintaxis más amigable. Aquí se pueden usar las palabras reservadas var, let o const. Esto va proseguido por el nombre de la función, el signo igual (=), los parámetros o argumentos que van entre los paréntesis, una flecha formada por el signo igual y el signo menor (=>) y por último las llaves donde irán las instrucciones {...}. </p>
+                    <p class="ejemplos">const nom_funcion = (parametros) => {
+                        instrucciones;  
+                    }
+                    </p>
+                    <br>
+                    <p>Esto incluso puede ser más resumido si nuestra función tiene un solo argumento, podemos dejar de usar los paréntesis y las llaves, simplemente después de nuestra flecha (=>) colocamos el argumento.</p>
+                    <p class="ejemplos">const nom_function = (parametros) => instrucción; </p>
+                </li>
                 <br>
-                <p>JavaScript tiene los siguientes tipos de datos:</p>
-                <ul>
-                    <li>string: secuencia de caracteres que representan un valor. </li>
-                    <li>number: valor numérico.</li>
-                    <li>boolean: valores true o false. </li>
-                    <li>null: denota valor nulo. </li>
-                    <li>undefined: valor sin definir. </li>
-                    <li>symbol: tipo de dato, cuyos casos son únicos e inmutables.</li>
-                    <li>object: objeto {} puede contener más variables en su interior.</li>
-                </ul>
-            
-                 <br>
-                <p>Expresiones regulares: </p>
-                <p>Las expresiones regulares son patrones que se utilizan para hacer coincidir combinaciones de caracteres en cadenas. En JavaScript, las expresiones regulares también son objetos. Las expresiones regulares se utilizan con los métodos RegExp test() y exec() y con los métodos de String, match(), replace(), search() y split().</p>
-            </li>
-            <br>
-            <li>Cómo declarar funciones en JavaScript: <!--consigna 4: ¿Cómo son todas las formas de declaración de funciones en JS?.-->
-                <p>Una definición de función consta de la palabra clave function, seguida de: el nombre de la función, una lista de parámetros de la función, entre paréntesis y separados por comas, las declaraciones de JavaScript que definen la función, encerradas entre corchetes, { /* … */ }.</p>
-                <p class="ejemplos">function nom_funcion (parametros){
-                    instrucciones; 
-                    }  
-                </p>
+                <li>Existen dos tipos de operadores: <!--consigna 5: ¿Cuáles son los operadores y conversión entre tipos?--> 
+                    <br>
+                    <p>Operadores de asignación: </p>
+                    <ul>
+                        <li>adición</li>
+                        <li>sustracción</li>
+                        <li>multiplicación</li>
+                        <li>división</li>
+                        <li>resta</li>
+                    </ul>
+                    <br>
+                    <p>Operadores de comparación: </p>
+                    <ul>
+                        <li>Igualdad: devuele true si ambos operandos son iguales (==)</li>
+                        <li>Desigualdad: devuelve true si ambos operandos no son iguales (!=) </li>
+                        <li>Estrictamente iguales: devuelve true si ambos operandos son iguales y tienen el mismo tipo (===)</li>
+                        <li>Estrictamente desiguales: devuelve true si los operandos no son iguales y/o no son del mismo tipo (!==)</li>
+                        <li>Mayor que: devuelve true si el de la izquierda es mayor (>)</li>
+                        <li>Mayor o igual que: devuelve true si el de la izquierda es mayor o igual (>=)</li>
+                        <li>Menor que: devuelve true si el de la izquierda es menor (<)</li>
+                        <li>Menor o igual que: devuelve true si el de la izquierda es menor o igual (<=)</li>
+                    </ul>
+                    <br>
+                    <p>Además de los operadores aritméticosestándar, JavaScript brinda operadores aritméticos, los cuales son: resto (%), incremento (++) y decremento (--)</p>
+                    <br>
+                    <p>También se puede mencionar el <strong>operador de concatenación</strong>, el cual une dos valores de string, devolviendo otro string correspondiente a la unión.</p>
+                    <p>Y el operador ternario, que necesita tres operandos: condición ? valor1 : valor2. Si la condición es true tomará el valor1, sino el valor2</p>
+                    <br>
+                    <p>Convertir tipos de datos: </p>
+                    <p>Podemos usar <strong>parseInt()</strong> para parsear una cadena (string) e intentar obtener un valor numérico.</p>
+                    <p>También usamos parseFloat, que interpreta al número siempre como decimal. </p>
+                </li>
+                <li>Estructuras de control de JavaScript: <!--consigna 6: ¿Cuáles son las estructura de control de JS?-->
+                    <ul>
+                        <li>if: Con él podemos indicar en el programa que se tome un camino sólo si se cumple la condición que establezcamos.</li>
+                        <li>if/else: La sentencia if especifica un bloque de código que se ejecuta si una condición es cierta y da la oportunidad de ejecutar otro bloque de código distinto si resulta que no es cierta.</li>
+                        <li>switch: Se utiliza para hacer diferentes acciones basadas en diferentes condiciones.
+                            Consiste en darle un valor y comprobar si ese valor coincide con algún caso.
+                            En el caso que coincida, ejecutamos un bloque de código específico.</li>
+                        <li>for: Nos permite ejecutar el código un número determinado de veces, es decir un bucle que se repite hasta que la condición especificada sea false.</li>
+                        <li>while: ejecuta sus sentencias mientras la condición sea verdadera.</li>
+                        <li>do…while: se repite hasta que la condición especificada sea falsa. </li>
+                    </ul>
+                </li>
                 <br>
-                <p>Las funciones también se pueden crear mediante una expresión de función, esto es una sintaxis más amigable. Aquí se pueden usar las palabras reservadas var, let o const. Esto va proseguido por el nombre de la función, el signo igual (=), los parámetros o argumentos que van entre los paréntesis, una flecha formada por el signo igual y el signo menor (=>) y por último las llaves donde irán las instrucciones {...}. </p>
-                <p class="ejemplos">const nom_funcion = (parametros) => {
-                    instrucciones;  
-                }
-                </p>
-                <br>
-                <p>Esto incluso puede ser más resumido si nuestra función tiene un solo argumento, podemos dejar de usar los paréntesis y las llaves, simplemente después de nuestra flecha (=>) colocamos el argumento.</p>
-                <p class="ejemplos">const nom_function = (parametros) => instrucción; </p>
-            </li>
-            <br>
-            <li>Existen dos tipos de operadores: <!--consigna 5: ¿Cuáles son los operadores y conversión entre tipos?--> 
-                <br>
-                <p>Operadores de asignación: </p>
-                <ul>
-                    <li>adición</li>
-                    <li>sustracción</li>
-                    <li>multiplicación</li>
-                    <li>división</li>
-                    <li>resta</li>
-                </ul>
-                <br>
-                <p>Operadores de comparación: </p>
-                <ul>
-                    <li>Igualdad: devuele true si ambos operandos son iguales (==)</li>
-                    <li>Desigualdad: devuelve true si ambos operandos no son iguales (!=) </li>
-                    <li>Estrictamente iguales: devuelve true si ambos operandos son iguales y tienen el mismo tipo (===)</li>
-                    <li>Estrictamente desiguales: devuelve true si los operandos no son iguales y/o no son del mismo tipo (!==)</li>
-                    <li>Mayor que: devuelve true si el de la izquierda es mayor (>)</li>
-                    <li>Mayor o igual que: devuelve true si el de la izquierda es mayor o igual (>=)</li>
-                    <li>Menor que: devuelve true si el de la izquierda es menor (<)</li>
-                    <li>Menor o igual que: devuelve true si el de la izquierda es menor o igual (<=)</li>
-                </ul>
-                <br>
-                <p>Además de los operadores aritméticosestándar, JavaScript brinda operadores aritméticos, los cuales son: resto (%), incremento (++) y decremento (--)</p>
-                <br>
-                <p>También se puede mencionar el <strong>operador de concatenación</strong>, el cual une dos valores de string, devolviendo otro string correspondiente a la unión.</p>
-                <p>Y el operador ternario, que necesita tres operandos: condición ? valor1 : valor2. Si la condición es true tomará el valor1, sino el valor2</p>
-                <br>
-                <p>Convertir tipos de datos: </p>
-                <p>Podemos usar <strong>parseInt()</strong> para parsear una cadena (string) e intentar obtener un valor numérico.</p>
-                <p>También usamos parseFloat, que interpreta al número siempre como decimal. </p>
-            </li>
-            <li>Estructuras de control de JavaScript: <!--consigna 6: ¿Cuáles son las estructura de control de JS?-->
-                <ul>
-                    <li>if: Con él podemos indicar en el programa que se tome un camino sólo si se cumple la condición que establezcamos.</li>
-                    <li>if/else: La sentencia if especifica un bloque de código que se ejecuta si una condición es cierta y da la oportunidad de ejecutar otro bloque de código distinto si resulta que no es cierta.</li>
-                    <li>switch: Se utiliza para hacer diferentes acciones basadas en diferentes condiciones.
-                        Consiste en darle un valor y comprobar si ese valor coincide con algún caso.
-                        En el caso que coincida, ejecutamos un bloque de código específico.</li>
-                    <li>for: Nos permite ejecutar el código un número determinado de veces, es decir un bucle que se repite hasta que la condición especificada sea false.</li>
-                    <li>while: ejecuta sus sentencias mientras la condición sea verdadera.</li>
-                    <li>do…while: se repite hasta que la condición especificada sea falsa. </li>
-                </ul>
-            </li>
-            <br>
-            <li>Objeto DOM en JS: <!--consigna 7: ¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?-->
-                <p>Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).
-                    En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, añadiendo nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc...
-                    Al estar "amparado" por un lenguaje de programación, todas estas tareas se pueden automatizar, incluso indicando que se realicen cuando el usuario haga acciones determinadas, como por ejemplo: pulsar un botón, mover el ratón, hacer click en una parte del documento, escribir un texto, etc...
-                </p>
-            </li>
-            <li>Función del Object Map: <!--consugna 8: ¿Qué función tiene en JS el Object Map?.-->
-                <p>Un Map es un grupo de pares clave-valor en el que se puede usar cualquier tipo de datos como clave y que puede mantener el orden de sus entradas. En los Map se incluyen elementos tanto de Object (un grupo único de pares clave-valor) como de Array (un grupo ordenado), pero conceptualmente son más parecidos a los Object. </p>
-            </li>
-        </ol>
-    
+                <li>Objeto DOM en JS: <!--consigna 7: ¿Qué es el objeto dom en JS? Y ¿Cómo trabaja?-->
+                    <p>Las siglas DOM significan Document Object Model, o lo que es lo mismo, la estructura del documento HTML. Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra, formando un árbol de etiquetas relacionadas entre sí, que se denomina árbol DOM (o simplemente DOM).
+                        En Javascript, cuando nos referimos al DOM nos referimos a esta estructura, que podemos modificar de forma dinámica desde Javascript, añadiendo nuevas etiquetas, modificando o eliminando otras, cambiando sus atributos HTML, añadiendo clases, cambiando el contenido de texto, etc...
+                        Al estar "amparado" por un lenguaje de programación, todas estas tareas se pueden automatizar, incluso indicando que se realicen cuando el usuario haga acciones determinadas, como por ejemplo: pulsar un botón, mover el ratón, hacer click en una parte del documento, escribir un texto, etc...
+                    </p>
+                </li>
+                <li>Función del Object Map: <!--consugna 8: ¿Qué función tiene en JS el Object Map?.-->
+                    <p>Un Map es un grupo de pares clave-valor en el que se puede usar cualquier tipo de datos como clave y que puede mantener el orden de sus entradas. En los Map se incluyen elementos tanto de Object (un grupo único de pares clave-valor) como de Array (un grupo ordenado), pero conceptualmente son más parecidos a los Object. </p>
+                </li>
+            </ol>
+        </div>
     </div>
 </body>
 </html>
