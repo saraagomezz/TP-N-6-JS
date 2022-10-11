@@ -167,23 +167,46 @@
                 </li>
                 
                 <li>
-                    <form action="">
+                    <form action="" name="formulario" method="get" id="form">
                         <label for="checkear">Seleccione cuantos autos hay en la imagen:  </label><br />
 
                         <img src="img/IMG.jpg" alt="imagen de validación" height="270px" width="360px"><br>
 
-                        <input type="radio" name="rta" id="rta" value="50"/>
+                        <input type="radio" name="respuesta" id="rta" value="5"/>
                         <label for="rta">5</label><br />
 
-                        <input type="radio" name="rta" id="rta" value="50"/>
+                        <input type="radio" name="respuesta" id="rta" value="2"/>
                         <label for="rta">2</label><br />
 
-                        <input type="radio" name="rta" id="50" value="50"/>
+                        <input type="radio" name="respuesta" id="rta" value="3"/>
                         <label for="rta">3</label><br />
-
-                        <input type="buttom" name="validacion" id="validar">
-                        <label for="validacion"></label>
+                        <br>
+                        <input type="submit" name="validacion" id="btn" value="Validar">
                     </form>
+
+                    <script>
+                        (function (event){
+                            var formulario = document.getElementsById('form'),
+                            elementos = form.elements,
+                            boton = document.getElementById ('btn');
+
+                            var validarRadio = function (event){
+                                if (form.rta[1].checked == true){
+                                    alert("Correcto");
+                                    event.preventDefault();
+                                }else{
+                                    alert("Error, vuelva a intentarlo"); 
+                                    event.preventDefault();
+                                }
+                            }
+                        
+                            var validar = function (event){
+                                validarRadio(event);
+                            }
+                            
+                            formulario.addEventListener ("submit", validar);
+                        }())
+                    </script>
                 </li>
             
             </ol>
